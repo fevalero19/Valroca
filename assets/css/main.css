@@ -4109,3 +4109,17 @@ input, select, textarea {
 					}
 
 	}
+
+	/* Override spotlight cropping for the image in section #three */
+#three.spotlight .image.main {
+    max-height: none !important;
+    overflow: visible !important;
+    height: auto !important;
+    position: relative !important;
+}
+
+#three.spotlight .image.main img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* optional */
+}
